@@ -10,18 +10,38 @@
   <body>
     <div id ="wrapper">
       <div id="header">
-          <div id = "textSort"><strong>Sort by</strong></div>
-          <div id = "textPriority">Priority</div>
+          <div id = "textSort"><strong>Sort by</strong>
+            <select name="Priority" id="PriorityInHeader"> 
+              <option  value="First">Priority</option>
+              <option class = "Priority1" value="High">High</option>
+              <option class = "Priority2" value="Medium">Medium</option>
+              <option class = "Priority3" value="Low">Low</option>
+            </select> 
+          </div>
+          
       </div>
       <div id="area"></div>
     </div>
     <div id ="rightWrapper">
-      <div id="toAddText"></div>
+        <textarea name="toAddText" id="toAddText"></textarea>
       <div id = "dateTimeWrapper">
-          <input type="date" id = "date" name = "date">
-          <input id = "hour" type = "Time">
-          <input id = "minute" >
+        <p>Event date <br><input type="date" id = "date" name = "date"></p>
+          <p>&nbsp;&nbsp;Event time <br><input id = "hour" type = "Time"></p>
+          <p>&nbsp;&nbsp;Notify for <br><select name="minute" id = "minute">
+            <option value = "30 min">30 min</option>
+            <option value="40 min">40 min</option>
+            <option value="50 min">50 min</option>
+            <option value="60 min">60 min</option>
+            <option value="120 min">120 min</option>
+           </select></p>
       </div>
+        <p>Priority <br><select name="Priority" id="Priority">
+          <option value="First"></option>
+          <option class = "Priority1" value="High">High</option>
+          <option class = "Priority2" value="Medium">Medium</option>
+          <option class = "Priority3" value="Low">Low</option>
+        </select></p>
+        <input type="button" id = "Submit" value = "Submit">
     </div>
 
 
