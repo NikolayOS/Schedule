@@ -73,15 +73,21 @@ overflow: auto;
 }
 .Priority1{
     background-color: #F7AEAE;
-    
+    width: 260px;
+    height: auto;
+    border: 1px solid black;
 }
 .Priority2{
-    background-color: #F7EFAE
-    
+    background-color: #F7EFAE;
+    width: 260px;
+    height: auto;
+    border: 1px solid black;
 }
 .Priority3{
     background-color: #CEF7AE;
-
+    width: 260px;
+    height: auto;
+    border: 1px solid black;
     
 }
 #Submit{
