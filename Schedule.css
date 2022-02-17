@@ -103,3 +103,16 @@ overflow: auto;
     width: 90px;
     position: absolute;
 }
+#Delete{
+    margin-left: 110px;
+    margin-top: -45px;
+    background: #e13333;
+    border: 2px solid #ab2071;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    color: white;
+    height: 30px;
+    width: 90px;
+    position: absolute;
+}
