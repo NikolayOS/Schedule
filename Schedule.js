@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 document.addEventListener("DOMContentLoaded", (e) => {
   window.indexedDB =
     window.indexedDB ||
@@ -100,24 +98,12 @@ window.addEventListener("click", () => {
     document.querySelector("#Delete").style.display = "none";
   }
 });
+
 document.getElementById("PriorityInHeader").addEventListener("change", () => {
-  let arr = document.getElementById("area").childNodes;
-arr.sort( (a, b) => {
-  if (a.nnerText > b.nnerText) {
-    return 1;
-  }
-  if (a.name < b.name) {
-    return -1;
-  }
-  return 0;
-});
+    for (let i = 0; i < document.getElementById("area").childNodes.length; i++){
+      for (let j = i; j < document.getElementById("area").childNodes.length; j++){
+        (j > i) ? document.getElementById("area").append(document.getElementById("area").childNodes.length[i]) :
+        document.getElementById("area").prepend(document.getElementById("area").childNodes.length[i])
+      }
+    }
 })
-// document.getElementById("PriorityInHeader").addEventListener("change", () => {
-//     for (let i = 0; i < document.getElementById("area").childNodes.length; i++){
-//       for (let j = i; j < document.getElementById("area").childNodes.length; j++){
-//         (j > i) ? document.getElementById("area").append(document.getElementById("area").childNodes.length[i]) :
-//         document.getElementById("area").prepend(document.getElementById("area").childNodes.length[i])
-//       }
-//     }
-// })
->>>>>>> Stashed changes
