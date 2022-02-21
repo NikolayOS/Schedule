@@ -97,3 +97,18 @@ overflow: auto;
     width: 90px;
     position: absolute;
 }
+<<<<<<< Updated upstream
+=======
+#Delete{
+    background: #ee3232;
+    border: 2px solid #ab2071;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    color: white;
+    height: 30px;
+    width: 90px;
+    position: fixed;
+    display: none;
+}
+>>>>>>> Stashed changes
