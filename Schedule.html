@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="Schedule.css" />
   </head>
   <body>
-    <form action = "" id ="wrapper">
+    <div id ="wrapper">
       <div id="header">
           <div id = "textSort"><strong>Sort by</strong>
-            <select name="Priority" id="PriorityInHeader"> 
-              <option  value="First">Priority</option>
-              <option class = "Priority1" value="High">High</option>
-              <option class = "Priority2" value="Medium">Medium</option>
-              <option class = "Priority3" value="Low">Low</option>
+            <select name="SortBy" id="PriorityInHeader"> 
+              <option  value="1">Priority</option>
+              <option  value="2">Date</option>
             </select> 
           </div>
           
       </div>
       <div id="area"></div>
-    </form>
-    <form action="" id ="rightWrapper">
+    </div>
+    <div id ="rightWrapper">
         <textarea name="toAddText" id="toAddText" cols = "37" wrap = "hard"></textarea>
       <div id = "dateTimeWrapper">
         <p>Event date <br><input type="date" id = "date" name = "date"></p>
@@ -36,16 +34,15 @@
            </select></p>
       </div>
         <p>Priority <br><select name="Priority" id="Priority">
-          <option value="First"></option>
-          <option class = "Priority1" value="Priority1">High</option>
-          <option class = "Priority2" value="Priority2">Medium</option>
-          <option class = "Priority3" value="Priority3">Low</option>
+          <option class = "Priority1" value="Priority1" >High</option>
+          <option class = "Priority2" value="Priority2" >Medium</option>
+          <option class = "Priority3" value="Priority3" >Low</option>
         </select></p>
         <input type="button" id = "Delete" value = "Delete">
         <input type="button" id = "Submit" value = "Submit" onclick="addTask()">
-      </form>
+    </div>
 
-
+<div></div>
 
 
 
