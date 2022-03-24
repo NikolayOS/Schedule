@@ -1,111 +1,112 @@
 #wrapper{
- margin-left: 50px;
-}
-#area{
-width: 300px;
-height: 500px;
-border: 1px solid black;
-overflow: auto;
-}
-#header{
-    max-width: 300px;
-    height: 30px;
-    border: 1px solid black;
-    border-bottom: 0px;
-}
-#textSort{
-    margin-top: 4px;
-    margin-left: 6px;
+    margin-left: 50px;
+   }
+   #area{
+   width: 300px;
+   height: 500px;
+   border: 1px solid black;
+   overflow: auto;
+   }
+   #header{
+       max-width: 300px;
+       height: 30px;
+       border: 1px solid black;
+       border-bottom: 0px;
+   }
+   #textSort{
+       margin-top: 4px;
+       margin-left: 6px;
+      
+   }
+   #PriorityInHeader{
+       margin-left: 170px;
+       margin-top: 4px;
+       border: hidden;
+       width: 70px;
+       position: absolute;
    
-}
-#PriorityInHeader{
-    margin-left: 170px;
-    margin-top: 4px;
-    border: hidden;
-    width: 70px;
-    position: absolute;
-
-    
-}
-#rightWrapper{
-    margin-left: 500px;
-    margin-top: -500px;
-}
-
-#toAddText{
-    width: 300px;
-    height: 250px;
-    border: 1px solid black;
-    resize: none;
-}
-#dateTimeWrapper{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    width: 310px;
-}
-#date{
-    width: auto;
-    height: 30px;
-    border: 1px solid black;
-    box-sizing: border-box;
-  
-}
-#hour{
-    width: auto;
-    height: 30px;
-    border: 1px solid black;
-    margin-left: 10px;
-}
-#minute{
-    width: 68px;
-    height: 32px;
-    border: 1px solid black;
-    margin-left: 10px;
-}
-#Priority{
-    margin-top: 10px;
-    height: 30px;
-    width: 90px;
-    border: 1px solid black;
-    background-color: lightgray;
-    box-sizing: border-box;
-}
-.Priority1{
-    background-color: #F7AEAE;
-    
-}
-.Priority2{
-    background-color: #F7EFAE
-    
-}
-.Priority3{
-    background-color: #CEF7AE;
-
-    
-}
-#Submit{
-    margin-left: 220px;
-    margin-top: -45px;
-    background: #33B7E1;
-    border: 2px solid #208AAB;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-style: normal;
-    color: white;
-    height: 30px;
-    width: 90px;
-    position: absolute;
-}
-#Delete{
-    background: #ee3232;
-    border: 2px solid #ab2071;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-style: normal;
-    color: white;
-    height: 30px;
-    width: 90px;
-    position: fixed;
-    display: none;
-}
+       
+   }
+   #rightWrapper{
+       margin-left: 500px;
+       margin-top: -500px;
+   }
+   
+   #toAddText{
+       width: 300px;
+       height: 250px;
+       border: 1px solid black;
+       resize: none;
+   }
+   #dateTimeWrapper{
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 0px;
+       width: 310px;
+   }
+   #date{
+       width: auto;
+       height: 30px;
+       border: 1px solid black;
+       box-sizing: border-box;
+     
+   }
+   #hour{
+       width: auto;
+       height: 30px;
+       border: 1px solid black;
+       margin-left: 10px;
+   }
+   #minute{
+       width: 68px;
+       height: 32px;
+       border: 1px solid black;
+       margin-left: 10px;
+   }
+   #Priority{
+       margin-top: 10px;
+       height: 30px;
+       width: 90px;
+       border: 1px solid black;
+       background-color: lightgray;
+       box-sizing: border-box;
+   }
+   .Priority1{
+       background-color: #F7AEAE;
+       
+   }
+   .Priority2{
+       background-color: #F7EFAE
+       
+   }
+   .Priority3{
+       background-color: #CEF7AE;
+   
+       
+   }
+   #Submit{
+       margin-left: 220px;
+       margin-top: -45px;
+       background: #33B7E1;
+       border: 2px solid #208AAB;
+       box-sizing: border-box;
+       border-radius: 10px;
+       font-style: normal;
+       color: white;
+       height: 30px;
+       width: 90px;
+       position: absolute;
+   }
+   #Delete{
+       background: #ee3232;
+       border: 2px solid #ab2071;
+       box-sizing: border-box;
+       border-radius: 10px;
+       font-style: normal;
+       color: white;
+       height: 30px;
+       width: 90px;
+       position: fixed;
+       display: none;
+   }
+   

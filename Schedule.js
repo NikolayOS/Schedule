@@ -41,13 +41,12 @@ function addTask(e) {
     selectedPriority,
   };
   let req = store.add(Task);
-  req.onsuccess = (event) => {
-  };
+  req.onsuccess = (event) => {};
   req.onerror = (event) => {
     return false;
   };
-  newEven = `<div class = "${Task.selectedPriority}" id = "${Task.id}"> ${Task.date} ${Task.hour} <pre>${Task.textInput}</pre></div>`;
-    document.getElementById("area").insertAdjacentHTML("beforeend", newEven);
+  newEven = `<div class = "${Task.selectedPriority}" id = "${Task.id}"> DATE : ${Task.date} HOUR : ${Task.hour} <pre>${Task.textInput}</pre></div>`;
+  document.getElementById("area").insertAdjacentHTML("beforeend", newEven);
   document.getElementById("rightWrapper").reset();
 }
 function showTasks(event) {
@@ -58,7 +57,7 @@ function showTasks(event) {
   index.openCursor().onsuccess = (event) => {
     let cursor = event.target.result;
     if (cursor) {
-      newEven = `<div class = "${cursor.value.selectedPriority}" id = "${cursor.value.id}"> ${cursor.value.date} ${cursor.value.hour} <pre>${cursor.value.textInput}</pre></div>`;
+      newEven = `<div class = "${cursor.value.selectedPriority}" id = "${cursor.value.id}"> DATE : ${cursor.value.date} HOUR : ${cursor.value.hour} <pre>${cursor.value.textInput}</pre></div>`;
       textOutput.insertAdjacentHTML("beforeend", newEven);
       cursor.continue();
     }
@@ -91,7 +90,6 @@ document.querySelector("#area").addEventListener("contextmenu", (item) => {
       return false;
     };
   });
-  
 });
 window.addEventListener("click", () => {
   if ((deleteDisplayed = true)) {
@@ -99,11 +97,44 @@ window.addEventListener("click", () => {
   }
 });
 
+
 document.getElementById("PriorityInHeader").addEventListener("change", () => {
-    for (let i = 0; i < document.getElementById("area").childNodes.length; i++){
-      for (let j = i; j < document.getElementById("area").childNodes.length; j++){
-        (j > i) ? document.getElementById("area").append(document.getElementById("area").childNodes.length[i]) :
-        document.getElementById("area").prepend(document.getElementById("area").childNodes.length[i])
+  if (document.getElementById("PriorityInHeader").value == "1"){
+      let textOutput = document.getElementById("area");
+      let  sorted = [...textOutput.childNodes].sort(function(a, b){
+          if (a.innerHTML > b.innerHTML) return 1;
+          if (a.innerHTML < b.innerHTML) return -1;
+          if (a.innerHTML == b.innerHTML) return 0;
+        });
+        for (let div of sorted){
+          textOutput.append(div);
+        }
+}
+
+else if (document.getElementById("PriorityInHeader").value == "2"){
+    let textOutput = document.getElementById("area");
+      let sorted = [...textOutput.childNodes].sort(function(a,b){
+        if (a.className > b.className) return 1;
+        if (a.className < b.className) return -1;
+        if (a.className == b.className) return 0;
+      });
+      for (let div of sorted){
+        textOutput.append(div);
       }
-    }
-})
+}
+});
+
+function checkDate(){
+  let nowDate = new Date;
+  let textOutput = document.getElementById("area");
+  let  checkDate = [...textOutput.childNodes].sort(function(a){
+    if (a.innerHTML > document.getElementById("date").value || a.innerHTML == document.getElementById("date").value ) return 1;
+  });
+  for (let div of checkDate){
+    console.log(div.innerHTML);
+}
+}
+checkDate();
+
+let noe = new Date();
+console.log(noe.getMonth()+1);
